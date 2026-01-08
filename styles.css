@@ -128,7 +128,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--bg-darker) 0%, #1a1a2e 100%);
+    /*background: linear-gradient(135deg, var(--bg-darker) 0%, #1a1a2e 100%); */
     background-image: 
     /*    linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(26, 26, 46, 0.9) 100%),*/
         url('images/hero-bg.jpg'); /* ADD YOUR HERO IMAGE */
