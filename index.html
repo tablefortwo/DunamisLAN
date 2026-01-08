@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DunamisLAN - Gaming Events by Dunamis Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="images/logo.png" alt="Dunamis Nexus Logo" class="nav-logo">
+                <span class="nav-title">DunamisLAN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="https://dunamisnexus.net" target="_blank">Main Site</a></li>
+                <li><a href="https://discord.gg/YOUR_DISCORD_INVITE" target="_blank" class="discord-link">Discord</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>DunamisLAN</h1>
+            <p class="tagline"><!-- ADD YOUR TAGLINE HERE --></p>
+            <div class="hero-buttons">
+                <a href="#register" class="btn btn-primary">Register Now</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About DunamisLAN</h2>
+            <div class="about-content">
+                <p>Welcome to DunamisLAN, where we bring together gamers from the Dunamis Nexus community for unforgettable LAN party experiences. Whether you're into competitive esports, casual gaming, or just hanging out with fellow gamers, our events are designed to build community through shared passion for gaming.</p>
+                <p>Our LAN parties feature tournaments, open gaming sessions, prizes, and a welcoming atmosphere for players of all skill levels. Join us as we celebrate gaming, friendship, and faith-based community.</p>
+                <blockquote>
+                    "Therefore encourage one another and build one another up, just as you are doing." - 1 Thessalonians 5:11 (ESV)
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - Carousel -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2>Past Events</h2>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <!-- INSTRUCTIONS: Add your images here -->
+                    <!-- Place your images in the 'images/gallery/' folder -->
+                    <!-- Name them: event1.jpg, event2.jpg, etc. -->
+                    <div class="carousel-slide">
+                        <img src="images/gallery/event1.jpg" alt="Past LAN Event 1">
+                        <div class="carousel-caption">DunamisLAN Event</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/gallery/event2.jpg" alt="Past LAN Event 2">
+                        <div class="carousel-caption">DunamisLAN Event</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/gallery/event3.jpg" alt="Past LAN Event 3">
+                        <div class="carousel-caption">DunamisLAN Event</div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="section register-section">
+        <div class="container">
+            <h2>Register for Our Next Event</h2>
+            <div class="register-content">
+                <div class="event-info">
+                    <h3>Next Event</h3>
+                    <p class="event-date">📅 Date: TBA</p>
+                    <p class="event-location">📍 Location: TBA</p>
+                    <p class="event-cost">💵 Cost: TBA</p>
+                    <p class="event-capacity">👥 Capacity: TBA</p>
+                </div>
+                
+                <!-- INSTRUCTIONS: Choose ONE of these registration options -->
+                
+                <!-- OPTION 1: Embedded Google Form -->
+                <!-- Uncomment and replace YOUR_FORM_ID with your actual Google Form ID -->
+                <!--
+                <div class="registration-form">
+                    <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                -->
+                
+                <!-- OPTION 2: External Registration Link -->
+                <div class="registration-buttons">
+                    <a href="https://YOUR_REGISTRATION_LINK_HERE" target="_blank" class="btn btn-primary btn-large">Register via LANReg</a>
+                    <!-- OR Google Forms link -->
+                    <!-- <a href="https://forms.gle/YOUR_FORM_LINK" target="_blank" class="btn btn-primary btn-large">Register via Google Forms</a> -->
+                </div>
+                
+                <!-- Payment/Donation Options -->
+                <div class="payment-section">
+                    <h3>Support DunamisLAN</h3>
+                    <p>Help us cover venue costs and prizes!</p>
+                    <div class="payment-buttons">
+                        <a href="https://ko-fi.com/dunamisnexus" target="_blank" class="btn btn-kofi">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+                            Support on Ko-fi
+                        </a>
+                        <a href="https://paypal.me/YOUR_PAYPAL" target="_blank" class="btn btn-paypal">
+                            Pay with PayPal
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="section schedule-section">
+        <div class="container">
+            <h2>Event Schedule</h2>
+            <div class="schedule-grid">
+                <!-- INSTRUCTIONS: Update times and activities for your event -->
+                <div class="schedule-item">
+                    <div class="schedule-time">9:00 AM</div>
+                    <div class="schedule-activity">
+                        <h3>Check-in & Setup</h3>
+                        <p>Arrive, get your badge, and set up your gaming station</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">10:00 AM</div>
+                    <div class="schedule-activity">
+                        <h3>Opening Ceremony</h3>
+                        <p>Welcome, announcements, and tournament brackets revealed</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">10:30 AM</div>
+                    <div class="schedule-activity">
+                        <h3>Free Play Begins</h3>
+                        <p>Open gaming on all stations</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">12:00 PM</div>
+                    <div class="schedule-activity">
+                        <h3>Lunch Break</h3>
+                        <p>Food provided or BYOF (Bring Your Own Food)</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">1:00 PM</div>
+                    <div class="schedule-activity">
+                        <h3>Tournament Round 1</h3>
+                        <p>Competitive gaming begins!</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">3:00 PM</div>
+                    <div class="schedule-activity">
+                        <h3>Tournament Finals</h3>
+                        <p>Championship matches</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">5:00 PM</div>
+                    <div class="schedule-activity">
+                        <h3>Awards & Closing</h3>
+                        <p>Prize distribution and final announcements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What should I bring?</h3>
+                    <p>Bring your gaming PC/console, peripherals (keyboard, mouse, headset), power strips, ethernet cable, and any games you want to play. We'll provide tables, chairs, and internet connectivity.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is food provided?</h3>
+                    <p>This varies by event. Check the event details when you register. Some events include meals, others are BYOF (Bring Your Own Food).</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What games will be played?</h3>
+                    <p>We feature a mix of popular competitive games for tournaments and open gaming for any titles you want to play. Tournament games are announced with each event registration.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need to be part of Dunamis Nexus?</h3>
+                    <p>While our events are hosted by Dunamis Nexus, everyone is welcome! We encourage you to join our community on Discord and our forum to stay connected.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What's the age requirement?</h3>
+                    <p>Age requirements vary by event and venue. Check the specific event details when registering. Minors may require parent/guardian permission.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I just watch or do I need to play?</h3>
+                    <p>Spectators are welcome! Whether you want to compete, play casually, or just hang out and watch, there's a place for you at DunamisLAN.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="section rules-section">
+        <div class="container">
+            <h2>Event Rules & Guidelines</h2>
+            <div class="rules-content">
+                <div class="rule-category">
+                    <h3>Code of Conduct</h3>
+                    <ul>
+                        <li>Treat all participants with respect and kindness</li>
+                        <li>No harassment, bullying, or discriminatory behavior</li>
+                        <li>Keep language and content appropriate for all ages</li>
+                        <li>Follow venue rules and staff instructions</li>
+                        <li>Report any concerns to event organizers immediately</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>Gaming Rules</h3>
+                    <ul>
+                        <li>No cheating, hacking, or exploiting in any games</li>
+                        <li>Tournament participants must check in 15 minutes before their match</li>
+                        <li>Matches use default tournament settings unless specified</li>
+                        <li>Organizer decisions are final in disputes</li>
+                        <li>Spectators must not interfere with active gameplay</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>Equipment & Setup</h3>
+                    <ul>
+                        <li>Label all your equipment with your name</li>
+                        <li>You are responsible for your own gear - we are not liable for damage or theft</li>
+                        <li>Keep your area clean and organized</li>
+                        <li>Do not unplug or interfere with others' equipment</li>
+                        <li>Network bandwidth limits may apply - no torrenting or streaming uploads</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>Safety & Venue</h3>
+                    <ul>
+                        <li>Keep walkways and emergency exits clear</li>
+                        <li>No smoking, vaping, or alcohol on premises</li>
+                        <li>Food and drinks must be kept away from gaming equipment</li>
+                        <li>Follow all fire safety and emergency procedures</li>
+                        <li>Violation of rules may result in removal from the event</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section class="section links-section">
+        <div class="container">
+            <h2>Connect With Us</h2>
+            <div class="links-grid">
+                <a href="https://dunamisnexus.net" target="_blank" class="link-card">
+                    <div class="link-icon">🏠</div>
+                    <h3>Main Website</h3>
+                    <p>Visit Dunamis Nexus</p>
+                </a>
+                <a href="https://discord.gg/YOUR_DISCORD_INVITE" target="_blank" class="link-card">
+                    <div class="link-icon">💬</div>
+                    <h3>Discord</h3>
+                    <p>Join our community</p>
+                </a>
+                <a href="https://forum.dunamisnexus.net" target="_blank" class="link-card">
+                    <div class="link-icon">📝</div>
+                    <h3>Forum</h3>
+                    <p>Discuss on our forum</p>
+                </a>
+                <a href="https://social.dunamisnexus.net" target="_blank" class="link-card">
+                    <div class="link-icon">🐘</div>
+                    <h3>Mastodon</h3>
+                    <p>Follow us on Mastodon</p>
+                </a>
+                <a href="https://ko-fi.com/dunamisnexus" target="_blank" class="link-card">
+                    <div class="link-icon">☕</div>
+                    <h3>Ko-fi</h3>
+                    <p>Support our events</p>
+                </a>
+                <a href="https://store.dunamisnexus.net" target="_blank" class="link-card">
+                    <div class="link-icon">🛍️</div>
+                    <h3>Merch Store</h3>
+                    <p>Official merchandise</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Dunamis Nexus. All rights reserved.</p>
+            <p>Building Community Through Faith and Gaming.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
