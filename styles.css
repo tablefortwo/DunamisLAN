@@ -64,6 +64,16 @@ body {
     gap: 1rem;
 }
 
+.nav-brand a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 0; /* Prevents extra spacing around image */
+}
+
+.nav-brand a:hover {
+    opacity: 0.8; /* Optional: visual feedback on hover */
+}
+
 .nav-logo {
     height: 40px;
     width: auto;
