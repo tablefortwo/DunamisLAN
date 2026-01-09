@@ -64,14 +64,14 @@ body {
     gap: 1rem;
 }
 
-.nav-brand a {
+.logo-link {
     text-decoration: none;
-    display: inline-block;
-    line-height: 0; /* Prevents extra spacing around image */
+    display: flex; /* Important for alignment */
+    align-items: center;
 }
 
-.nav-brand a:hover {
-    opacity: 0.8; /* Optional: visual feedback on hover */
+.logo-link:hover {
+    opacity: 0.8;
 }
 
 .nav-logo {
@@ -80,6 +80,9 @@ body {
 }
 
 .nav-title {
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
