@@ -64,15 +64,15 @@ body {
     gap: 1rem;
 }
 
-.logo-link {
+/*.logo-link {
     text-decoration: none;
-    display: flex; /* Important for alignment */
+    display: flex;
     align-items: center;
 }
 
 .logo-link:hover {
     opacity: 0.8;
-}
+} */
 
 .nav-logo {
     height: 40px;
